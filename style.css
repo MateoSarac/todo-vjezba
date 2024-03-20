@@ -36,6 +36,7 @@
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
+  align-items: center;
 }
 input{
   flex: 1;
@@ -44,6 +45,7 @@ input{
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
+  background: transparent;
 }
 button{
   outline: none;
@@ -51,12 +53,17 @@ button{
   color: #fff;
   font-size: 16px;
   border-radius: 40px;
+  border: none;
+  border-color: lightgrey;
+  cursor: pointer;
 }
 ul li{
   font-size: 18px;
   padding: 12px 8px 12px 50px;
   user-select: none;
   cursor: pointer;
+  list-style: none;
+  position: relative;
 }
 ul li::before{
   position: absolute;
@@ -67,12 +74,16 @@ ul li::before{
   background-position: center;
   top: 8px;
   left: 8px;
+  content: none;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/cc_mono_icon_set/blacks/48x48/checkbox_unchecked.png");
 }
 ul li.checked{
   color: #1c1a1a;
+  text-decoration-line: line-through;
 }
 ul li.checked::before{
-  background-image: url();
+  background-image: url("https://cdn4.iconfinder.com/data/icons/fluent-solid-20px-vol-2/20/ic_fluent_checkbox_checked_20_filled-512.png");
+
 }
 ul li span{
   position: absolute;
