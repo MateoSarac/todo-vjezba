@@ -9,12 +9,15 @@ function addTask(){
         li.innerText = input.value;
         let span = document.createElement('span');
         span.innerText = 'x';
-        li.append(span);
+        ul.appendChild(span);
         ul.appendChild(li);
         input.value = '';
 
-        ul.addEventListener("click", function(){
-            
+        li.addEventListener("click", function(){
+            li.classList.add('checked')
+        });
+        span.addEventListener("click", function(){
+            li.classList.remove('checked')
         })
     }
 };
