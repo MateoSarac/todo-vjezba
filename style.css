@@ -31,7 +31,7 @@ input{
   border: none;
   outline: none;
   padding: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
 }
 button{
